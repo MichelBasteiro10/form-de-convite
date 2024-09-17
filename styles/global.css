@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
+    --purple: #B259FF;
+    --fuschia: #59B2FF;
+    --brand-light: #59B2FF;
+    --brand-light: #59B2FF;
+    --brand-light: #59B2FF;
+    --brand-light: #59B2FF;
+    --brand-light: #59B2FF;
+    --brand-light: #59B2FF;
+    --brand-light: #59B2FF;
+    --brand-light: #59B2FF;
+    --brand-light: #59B2FF;
+
+
+    --font-leckerliOne: 'Leckerli One', sans-serif;
+    --leckerliOne-logo: 400 2.5rem/auto var(--font-leckerliOne);
+    --font-baloo2: 'Baloo 2', sans-serif;
+    --baloo2-Heading-md: 700 1.75rem/auto var(--font-baloo2);
+    --baloo2-Heading-sm: 700 1.125rem/auto var(--font-baloo2);
+    --font-opensSans: 'Open Sans', sans-serif;
+    --openSans-body-md: 400 600 1rem/auto var(--font-opensSans);
+    --openSans-body-sm: 400 600 0.875rem/auto var(--font-opensSans);
+    --openSans-body-xs: 400 600 0.75rem/auto var(--font-opensSans);
+}
