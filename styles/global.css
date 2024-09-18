@@ -29,12 +29,17 @@
     --text-heading: #F9F9F9;
 
     --font-leckerliOne: 'Leckerli One', sans-serif;
-    --leckerliOne-logo: 400 2.5rem/auto var(--font-leckerliOne);
+    --leckerliOne-logo: 400 2.5rem var(--font-leckerliOne);
     --font-baloo2: 'Baloo 2', sans-serif;
-    --baloo2-Heading-md: 700 1.75rem/auto var(--font-baloo2);
-    --baloo2-Heading-sm: 700 1.125rem/auto var(--font-baloo2);
-    --font-opensSans: 'Open Sans', sans-serif;
-    --openSans-body-md: 400 600 1rem/auto var(--font-opensSans);
-    --openSans-body-sm: 400 600 0.875rem/auto var(--font-opensSans);
-    --openSans-body-xs: 400 600 0.75rem/auto var(--font-opensSans);
+    --baloo2-Heading-md: 700 1.75rem var(--font-baloo2);
+    --baloo2-Heading-sm: 700 1.125rem var(--font-baloo2);
+    --font-openSans: 'Open Sans', sans-serif;
+    --openSans-body-light: 300 1rem var(--font-openSans);
+    --openSans-body-md: 400 1rem var(--font-openSans);
+    --openSans-body-sm: 400 0.875rem var(--font-openSans);
+    --openSans-body-xs: 400 0.75rem var(--font-openSans);
+}
+
+body {
+    overflow: hidden;
 }

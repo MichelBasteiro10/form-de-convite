@@ -1,0 +1,48 @@
+#app {
+    display: grid;
+    grid-template-columns: 31.25% 64.04%;
+    gap: 9.37rem;
+    height: 100%;
+    background-color: var(--shape-background);
+}
+
+#brand {
+    background-image: url(../assets/images/BackgroundCake.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45.5rem;
+    margin-block: 1.25rem;
+    margin-left: 1.25rem;
+    border-radius: 0.75rem;
+
+    & header {
+        padding-inline: 2rem;
+        padding-top: 2rem;
+
+        & img {
+            width: 2.86rem;
+            height: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        & h1 {
+            font: var(--leckerliOne-logo);
+            color: var(--pink);
+            margin-bottom: 0.25rem;
+        }
+
+        & p {
+            font: var(--openSans-body-light);
+            color: var(--text-heading);
+        }
+    }
+}
+
+main {
+    width: 35rem;
+    height: 100%;
+}
+
+#invite {
+   background-color: var(--shape-body);
+}
