@@ -13,6 +13,7 @@
     height: 45.5rem;
     margin-block: 1.25rem;
     margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
     border-radius: 0.75rem;
 
     & header {
@@ -45,4 +46,11 @@ main {
 
 #invite {
    background-color: var(--shape-body);
+   
+   & h1 {
+    font: var(--baloo2-Heading-md);
+    color: var(--text-heading);
+    padding-top: 5rem;
+    margin-bottom: 2.5rem;
+   }
 }

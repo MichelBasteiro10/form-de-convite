@@ -28,8 +28,39 @@
 
         <main>
             <div id="invite">
-                <h1>Olá Mundo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit blanditiis velit autem iure delectus, quis perspiciatis repellendus ipsum tempore eum commodi est? Rem doloremque eligendi ducimus deleniti itaque consectetur?</p>
+                <h1>Crie seu convite</h1>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset id="about-event">
+                        <legend>
+                            <img src="assets/icons/calendar.svg" alt="Calendário">
+                            <h2>Sobre o evento</h2>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="title">Título</label>
+                            <input type="text" name="title" id="title" placeholder="Nome do evento">
+
+                            <label for="start">Início</label>
+                            <input type="datetime-local" name="start" id="start">
+
+                            <label for="end">Fim</label>
+                            <input type="datetime-local" name="end" id="end">
+
+                            <label for="type">Tipo</label>
+                            <select name="type" id="type">
+                                <option value="in-person">Presencial</option>
+                                <option value="online">Online</option>
+                            </select>
+
+                            <label for="local">Local</label>
+                            <input type="text" name="local" id="local" placeholder="Link ou endereço">
+
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do eventoEscreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </main>
     </div>
