@@ -54,3 +54,11 @@ main {
     margin-bottom: 2.5rem;
    }
 }
+
+#customization {
+    
+
+    #colors {
+        display: flex;
+    }
+}
