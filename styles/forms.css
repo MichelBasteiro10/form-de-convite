@@ -1,0 +1,57 @@
+fieldset {
+    margin-bottom: 3rem;
+}
+
+fieldset,
+input {
+    border: none;
+}
+
+label {
+    font: var(--openSans-body-sm);
+    color: var(--text-body);
+}
+
+input::placeholder {
+    color: var(--input-placeholder);
+}
+
+input,
+input[type="datetime-local"],
+input[type="radio"] {
+    appearance: none;
+    font: var(--openSans-body-md);
+    width: 100%;
+    height: 2.875rem;
+    padding-inline: 1rem;
+    margin-top: 0.75rem;
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--text-body);
+}
+
+textarea {
+    width: 100%;
+    font: var(--openSans-body-md);
+    height: 8.5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--text-body);
+    margin-top: 0.75rem;
+}
+
+input:focus, 
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--brand-light);
+}
+
+input[type="datetime-local"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    } 
+}
