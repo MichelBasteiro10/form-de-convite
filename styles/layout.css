@@ -170,9 +170,97 @@ main {
 
         #customization {
             #colors {
-                display: flex;
+                position: relative;
+                #blue, 
+                #navy, 
+                #purple, 
+                #fuschia, 
+                #pink, 
+                #danger, 
+                #orange, 
+                #yellow, 
+                #lime, 
+                #green,
+                #cyan {
+                    width: 1.75rem;
+                    height: 1.75rem;
+                    position: absolute;
+                    bottom: .4rem;
+                    left: .39rem;
+                    border-radius: 999px;
+                }
+
+                #blue {
+                    background-color: var(--brand-light);
+                }
+
+                #navy {
+                    background-color: var(--navy);
+                }
+
+                #purple {
+                    background-color: var(--purple);
+                }
+
+                #fuschia {
+                    background-color: var(--fuschia);
+                }
+
+                #pink {
+                    background-color: var(--pink);
+                }
+
+                #danger {
+                    background-color: var(--danger);
+                }
+
+                #orange {
+                    background-color: var(--orange);
+                }
+
+                #yellow {
+                    background-color: var(--yellow);
+                }
+
+                #lime {
+                    background-color: var(--lime);
+                }
+
+                #green {
+                    background-color: var(--green);
+                }
+
+                #cyan {
+                    background-color: var(--cyan);
+                }
+
+
+
+
+               & .colors-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                & .radio-inner-blue {
+                    background-color: var(--shape-button);
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 999px;
+                    position: relative;
+                    margin-top: 1rem;
+                }
+
+                input[type="radio"] {
+                    all: unset;
+                    
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    position: absolute;
+                    inset: 1;
+                    border-radius: 999px;
+                } 
             }
         }
-
     }
 }
