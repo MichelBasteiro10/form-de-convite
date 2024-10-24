@@ -218,19 +218,22 @@
                             </div>
                         </div>
                         <div id="style">
-                            <h2>Estilo</h2>
-                            <img src="" alt="">
+                            <label>Estilo</label>
+                            <input type="radio" name="" id="">
+                            <button disabled="disabled"></button>
+                            <div id="btn">
+                                <div id="toogle"></div>
+                            </div>
                             <span>Escuro</span>
                         </div>
                         <div id="file-input">
-                            <h2>Foto de capa</h2>
+                            <label>Foto de capa</label>
                             <input type="file" placeholder="Selecionar">
                             <span></span>
                         </div>
                     </fieldset>
 
                     <fieldset id="contact-data">
-                        <img src="" alt="">
                         <legend>
                             <img src="assets/icons/contact.svg" alt="Contato">
                             <h2>Dados para contato</h2>
@@ -248,23 +251,27 @@
                             <input type="text" id="phone" name="phone" placeholder="(99) 99999-9999 ">
                         </div>
                     </fieldset>
-                </form>
-                <div id="footer">
-                    <div id="items">
-                        <div id="terms">
-                            <input type="checkbox">
-                            <span>Li e concordo com os Termos e Condições e com a Política de Privacidade</span>
-                        </div>
-                        <div id="updates-email">
-                            <input type="checkbox">
-                            <span>Aceito receber atualizações e promoções por e-mail</span>
-                        </div>
-                        <div id="updates-sms">
-                            <input type="checkbox">
-                            <span>Aceito receber atualizações e promoções por SMS</span>
+                    <div id="end-line"></div>
+                    <div id="footer">
+                        <div id="items">
+                            <div id="terms">
+                                <div class="check"></div>
+                                <input type="checkbox" name="" id="check-terms">
+                                <label>Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+                            </div>
+                            <div id="updates-email">
+                                <div class="check" id="checked-email"></div>
+                                <input type="checkbox" name="check-email" id="check-email">
+                                <label for="check-email">Aceito receber atualizações e promoções por e-mail</label>
+                            </div>
+                            <div id="updates-sms">
+                                <div class="check" id="checked-sms"></div>
+                                <input type="checkbox" name="" id="check-sms">
+                                <label>Aceito receber atualizações e promoções por SMS</label>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </main>
     </div>

@@ -55,3 +55,11 @@ input[type="datetime-local"] {
         opacity: 0;
     } 
 }
+
+input[type="checkbox"] {
+    :has(:checked) {
+        background-image: url(../assets/images/checked.png);
+        background-size: cover;
+        z-index: 3;
+    }
+}
