@@ -218,18 +218,21 @@
                             </div>
                         </div>
                         <div id="style">
-                            <label>Estilo</label>
-                            <input type="radio" name="" id="">
-                            <button disabled="disabled"></button>
-                            <div id="btn">
-                                <div id="toogle"></div>
+                            <div id="choice-of-theme">
+                                <label for="chk">Estilo</label>
+                                <div id="chosen-theme">
+                                    <input type="checkbox" id="chk" />
+                                    <label for="chk" class="switch">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <span id="theme"></span>
+                                </div>
                             </div>
-                            <span>Escuro</span>
-                        </div>
-                        <div id="file-input">
-                            <label>Foto de capa</label>
-                            <input type="file" placeholder="Selecionar">
-                            <span></span>
+
+                            <div id="file-area">
+                                <label>Foto de capa</label>
+                                <input type="file" id="file-input">
+                            </div>
                         </div>
                     </fieldset>
 
@@ -256,8 +259,8 @@
                         <div id="items">
                             <div id="terms">
                                 <div class="check"></div>
-                                <input type="checkbox" name="" id="check-terms">
-                                <label>Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+                                <input type="checkbox" name="check-terms" id="check-terms">
+                                <label for="check-terms">Li e concordo com os <a href=""><strong class="blue-text">Termos e Condições</strong></a> e com a <a href="#"><strong class="blue-text">Política de Privacidade</strong></a></label>
                             </div>
                             <div id="updates-email">
                                 <div class="check" id="checked-email"></div>
@@ -266,9 +269,14 @@
                             </div>
                             <div id="updates-sms">
                                 <div class="check" id="checked-sms"></div>
-                                <input type="checkbox" name="" id="check-sms">
-                                <label>Aceito receber atualizações e promoções por SMS</label>
+                                <input type="checkbox" name="check-sms" id="check-sms">
+                                <label for="check-sms">Aceito receber atualizações e promoções por SMS</label>
                             </div>
+                        </div>
+
+                        <div id="button-section">
+                            <img src="assets/icons/ticket.svg" alt="Ingresso para o evento">
+                            <label for="">Gerar convite</label>
                         </div>
                     </div>
                 </form>
