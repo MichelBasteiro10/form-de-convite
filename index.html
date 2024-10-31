@@ -231,7 +231,13 @@
 
                             <div id="file-area">
                                 <label>Foto de capa</label>
-                                <input type="file" id="file-input">
+                                <div id="selection-button">
+                                    <label for="file-upload" id="custom-button">
+                                        <img src="assets/icons/upload.svg" alt="Icone de upload">
+                                        <span>Selecionar</span>
+                                    </label>
+                                    <input type="file" id="file-upload">
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -243,11 +249,15 @@
                         </legend>
                         <div id="name-contact">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" placeholder="Nome completo">
+                            <input type="text" id="name" name="name" placeholder="Nome completo" required>
                         </div>
                         <div id="email-contact">
                             <label for="email">Email</label>
-                            <input type="text" id="email" name="email" placeholder="exemplo@email.com">
+                            <input type="text" id="email" name="email" placeholder="exemplo@email.com" required>
+                            <div class="error">
+                                <img src="assets/icons/circle-alert.svg" alt="alerta">
+                                <span>Insira um email válido</span>
+                            </div>
                         </div>
                         <div id="phone-contact">
                             <label for="phone">Telefone</label>
@@ -259,8 +269,10 @@
                         <div id="items">
                             <div id="terms">
                                 <div class="check"></div>
-                                <input type="checkbox" name="check-terms" id="check-terms">
-                                <label for="check-terms">Li e concordo com os <a href=""><strong class="blue-text">Termos e Condições</strong></a> e com a <a href="#"><strong class="blue-text">Política de Privacidade</strong></a></label>
+                                <input type="checkbox" name="check-terms" id="check-terms" required>
+                                <label for="check-terms">Li e concordo com os <a href=""><strong
+                                            class="blue-text">Termos e Condições</strong></a> e com a <a
+                                        href="#"><strong class="blue-text">Política de Privacidade</strong></a></label>
                             </div>
                             <div id="updates-email">
                                 <div class="check" id="checked-email"></div>

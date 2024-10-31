@@ -340,6 +340,7 @@ main {
             #style {
                 display: flex;
                 gap: 1rem;
+                align-items: start;
 
                 #chk {
                     display: none;
@@ -387,14 +388,14 @@ main {
                         font-family: var(--font-openSans);
                         font-size: .875rem;
                         font-weight: 100;
-                      }
+                    }
 
-                      #chk:checked + .switch + &::before {
+                    #chk:checked+.switch+&::before {
                         content: "Claro";
                         font-family: var(--font-openSans);
                         font-size: .875rem;
                         font-weight: 100;
-                      }
+                    }
                 }
 
                 #choice-of-theme {
@@ -411,12 +412,65 @@ main {
                     }
                 }
 
-
                 #file-area {
                     display: flex;
                     flex-direction: column;
+                    justify-content: start;
                     gap: .75rem;
                     height: 4.93rem;
+
+                    #selection-button {
+                        position: relative;
+                    }
+
+                    #custom-button {
+                        display: flex;
+                        align-items: center;
+                        height: 2.5rem;
+                        width: 7.437rem;
+                        padding: .25rem .75rem;
+                        gap: .5rem;
+                        border-radius: .5rem;
+
+                        color: var(--text-heading);
+                        background-color: var(--shape-button);
+                        z-index: 3;
+                        position: absolute;
+
+                        &:hover {
+                            background-color: var(--shape-hover);
+                        }
+
+                        span {
+                            font-family: "Open Sans", sans-serif;
+                            color: var(--text-heading);
+                            font-size: .875rem;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            height: 1rem;
+                            width: 1rem;
+                        }
+                    }
+
+                    & input[type="file"] {
+                        all: unset;
+                        z-index: 1;
+                        position: absolute;
+                        left: 0%;
+                        color: var(--input-placeholder);
+                        font: var(--openSans-body-md);
+                        font-weight: 400;
+                    }
+
+                    ::-webkit-file-upload-button {
+                        background-color: var(--shape-button);
+                        width: 7.347rem;
+                        height: 2.5rem;
+                        border-radius: .5rem;
+                        padding: 0rem;
+                    }
                 }
             }
         }
