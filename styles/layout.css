@@ -83,10 +83,12 @@ main {
             }
         }
 
+
         #info {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
+            margin-bottom: 4rem;
 
             & .input-wrapper:nth-child(1),
             & .input-wrapper:nth-child(6) {
@@ -172,6 +174,7 @@ main {
         }
 
         #customization {
+            margin-bottom: 3rem;
             #colors {
                 margin-bottom: 1.75rem;
                 position: relative;

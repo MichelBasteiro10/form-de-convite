@@ -1,5 +1,5 @@
 fieldset {
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 fieldset,
@@ -42,7 +42,7 @@ textarea {
     margin-top: 0.75rem;
 }
 
-input:focus, 
+input:focus,
 select:focus,
 textarea:focus {
     outline: 2px solid var(--brand-light);
@@ -53,7 +53,7 @@ input[type="datetime-local"] {
 
     &::-webkit-calendar-picker-indicator {
         opacity: 0;
-    } 
+    }
 }
 
 input[type="checkbox"] {
@@ -61,5 +61,44 @@ input[type="checkbox"] {
         background-image: url(../assets/images/checked.png);
         background-size: cover;
         z-index: 3;
+    }
+}
+
+input {
+    &:invalid {
+        border: 0.125rem solid var(--danger);
+    }
+
+    &[required]+.error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        font: var(--openSans-body-xs);
+        color: var(--danger);
+        margin-top: .5rem;
+    }
+
+    &:not(:focus):valid+.error {
+        display: none;
+    }
+}
+
+textarea {
+    &:invalid {
+        border: 0.125rem solid var(--danger);
+    }
+
+    &[required]+.error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        font: var(--openSans-body-xs);
+        color: var(--danger);
+        margin-top: .3rem;
+    }
+
+    &:not(:focus):valid+.error {
+        display: none;
+        margin-bottom: 3rem;
     }
 }

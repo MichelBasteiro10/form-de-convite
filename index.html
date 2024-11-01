@@ -43,21 +43,33 @@
                         <div id="info">
                             <div class="input-wrapper">
                                 <label for="title">Título</label>
-                                <input type="text" name="title" id="title" placeholder="Nome do evento">
+                                <input type="text" name="title" id="title" placeholder="Nome do evento" required>
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="alerta">
+                                    <span>Insira o nome do evento</span>
+                                </div>
                             </div>
                             <div class="input-wrapper">
                                 <label for="start">Início</label>
-                                <input type="datetime-local" name="start" id="start">
+                                <input type="datetime-local" name="start" id="start" required>
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="alerta">
+                                    <span>Insira uma data</span>
+                                </div>
                             </div>
                             <div class="input-wrapper">
                                 <label for="end">Fim</label>
-                                <input type="datetime-local" name="end" id="end">
+                                <input type="datetime-local" name="end" id="end" required>
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="alerta">
+                                    <span>Insira uma data</span>
+                                </div>
                             </div>
                             <div id="radio-wrapper">
                                 <label for="in-person">Tipo</label>
                                 <div class="radio-inner">
                                     <div class="radio-inner-change">
-                                        <input type="radio" name="opcao" value="opcao1" id="opcao1">
+                                        <input type="radio" name="opcao" value="opcao1" id="opcao1" required>
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_4160_206)">
@@ -75,7 +87,7 @@
                                     </div>
 
                                     <div class="radio-inner-change">
-                                        <input type="radio" name="opcao" value="opcao2" id="opcao2">
+                                        <input type="radio" name="opcao" value="opcao2" id="opcao2" required>
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -88,12 +100,20 @@
                             </div>
                             <div class="input-wrapper">
                                 <label for="local">Local</label>
-                                <input type="text" name="local" id="local" placeholder="Link ou endereço">
+                                <input type="text" name="local" id="local" placeholder="Link ou endereço" required>
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="alerta">
+                                    <span>Insira o local ou link</span>
+                                </div>
                             </div>
                             <div class="input-wrapper">
                                 <label for="description">Descrição</label>
                                 <textarea name="description" id="description"
-                                    placeholder="Escreva sobre os detalhes do evento"></textarea>
+                                    placeholder="Escreva sobre os detalhes do evento" required></textarea>
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="alerta">
+                                    <span>Insira uma Descrição</span>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -176,22 +196,22 @@
                                     <p>Casamento</p>
                                 </div>
                                 <div class="theme-options">
-                                    <img src="assets/images/Image (5).png" alt="">
+                                    <img src="assets/images/Image (8).png" alt="">
                                     <input type="radio" name="selected-theme">
                                     <p>Chá de bebê</p>
                                 </div>
                                 <div class="theme-options">
-                                    <img src="assets/images/Image (6).png" alt="">
+                                    <img src="assets/images/Image (7).png" alt="">
                                     <input type="radio" name="selected-theme">
                                     <p>Chá de panela</p>
                                 </div>
                                 <div class="theme-options">
-                                    <img src="assets/images/Image (7).png" alt="">
+                                    <img src="assets/images/Image (6).png" alt="">
                                     <input type="radio" name="selected-theme">
                                     <p>Carnaval</p>
                                 </div>
                                 <div class="theme-options">
-                                    <img src="assets/images/Image (8).png" alt="">
+                                    <img src="assets/images/Image (5).png" alt="">
                                     <input type="radio" name="selected-theme">
                                     <p>Páscoa</p>
                                 </div>
@@ -249,7 +269,7 @@
                         </legend>
                         <div id="name-contact">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" placeholder="Nome completo" required>
+                            <input type="text" id="name" name="name" placeholder="Nome completo">
                         </div>
                         <div id="email-contact">
                             <label for="email">Email</label>
